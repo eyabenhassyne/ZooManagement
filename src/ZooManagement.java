@@ -6,28 +6,28 @@ public class ZooManagement {
 
     public static void main(String[] args) {
         ZooManagement zoo = new ZooManagement();
-        System.out.println("Bienvenue dans " + zoo.zooName + " qui contient " + zoo.nbrCages + " cages.");
+        System.out.println(zoo.zooName + "contient " + zoo.nbrCages + " cages");
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Entrez le nom du zoo : ");
         String inputName = scanner.nextLine();
         while (inputName.trim().isEmpty()) {
-            System.out.print("Le nom du zoo ne peut pas être vide. Réessayez : ");
+            System.out.print("reessayer");
             inputName = scanner.nextLine();
         }
 
-        System.out.print("Entrez le nombre de cages : ");
+        System.out.print("donner nbre de cages: ");
         int inputCages = scanner.nextInt();
         while (inputCages <= 0) {
-            System.out.print("Le nombre de cages doit être un entier positif. Réessayez : ");
+            System.out.print("Réessayez : ");
             inputCages = scanner.nextInt();
         }
 
         zoo.zooName = inputName;
         zoo.nbrCages = inputCages;
 
-        System.out.println("Mise à jour : Bienvenue dans " + zoo.zooName + " qui contient " + zoo.nbrCages + " cages.");
+        System.out.println( zoo.zooName + "contient " + zoo.nbrCages + " cages");
     }
 }
 
