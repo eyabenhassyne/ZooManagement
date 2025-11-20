@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Java 3A.iml" filepath="$PROJECT_DIR$/Java 3A.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/prosit.iml" filepath="$PROJECT_DIR$/.idea/prosit.iml" />
     </modules>
   </component>
 </project>
